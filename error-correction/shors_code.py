@@ -47,7 +47,7 @@ def shors_code(input_bit=0, print_circuit=False):
     phi = random.uniform(0, 2 * math.pi)
     l = random.uniform(0, 2 * math.pi)
     noise_qubit = int(random.uniform(0, len(redundant_qubits)))
-    qc.u3(theta, phi, l, redundant_qubits[noise_qubit])
+    qc.u(theta, phi, l, redundant_qubits[noise_qubit])
 
     # Syndrome computation.
 
